@@ -1,0 +1,152 @@
+body {
+  background: #fad8ff;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 7px rgba(0,0,0,.08);
+  display: flex;
+  align-items: center;
+  padding: 9px 0 7px 0;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+}
+.logo {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.11rem;
+  padding: 0 15px;
+  color: #960131;
+  text-align: left;
+  line-height: 1.15;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  margin: 0 22px;
+  flex: 1;
+}
+.search-form input {
+  border-radius: 18px;
+  border: 1.5px solid #aaaaaa;
+  padding: 8px 16px;
+  width: 245px;
+  font-size: 1.13rem;
+  font-style: italic;
+}
+.search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-left: 7px;
+  font-size: 1.25rem;
+}
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+.nav-links a {
+  font-family: 'Georgia', serif;
+  text-decoration: none;
+  color: #a23bcf;
+  font-size: 1.14rem;
+  padding: 7px 18px;
+  border-radius: 10px;
+  transition: background 0.13s;
+}
+.nav-links a.active-btn {
+  background: #a23bcf;
+  color: #fff;
+  font-weight: 600;
+}
+.nav-links a:hover {
+  background: #d9abfa;
+}
+
+.purchase-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: 38px 0 0 0;
+}
+
+.purchase-card {
+  background: #fff;
+  border-radius: 29px;
+  box-shadow: 0 7px 24px 2px rgba(48,10,95,.10);
+  width: 350px;
+  display: flex;
+  align-items: flex-start;
+  padding: 18px 22px;
+  gap: 15px;
+  flex-direction: column;
+}
+.purchase-img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 1px 8px rgba(70,0,41,.13);
+  background: #fff;
+}
+.purchase-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+.purchase-title {
+  font-size: 1.33rem;
+  color: #18192b;
+  margin-bottom: 3px;
+}
+.purchase-desc {
+  font-size: 1.1rem;
+  color: #483350;
+  margin-bottom: 1px;
+}
+.purchase-price {
+  font-size: 1.16rem;
+  color: #a23bcf;
+  margin-bottom: 9px;
+}
+.buy-btn {
+  background: #d795f9;
+  color: #fff;
+  font-size: 1.19rem;
+  border: none;
+  border-radius: 17px;
+  padding: 7px 33px;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  font-weight: 500;
+  transition: background 0.13s;
+  margin-top: 7px;
+}
+.buy-btn:hover {
+  background: #be6cf0;
+}
+
+@media (max-width: 1000px) {
+  .purchase-card {
+    width: 90vw;
+    max-width:97vw;
+  }
+  .purchase-container { flex-direction: column; gap:22px;}
+}
+
+@media (max-width: 600px) {
+  .purchase-card {
+    width: 98vw;
+    min-width: 0;
+    padding: 12px 5px;
+  }
+  .purchase-img {
+    max-width: 93vw;
+    height: auto;
+  }
+}

@@ -1,0 +1,138 @@
+body {
+  background: #fad8ff;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 7px rgba(0,0,0,.08);
+  display: flex;
+  align-items: center;
+  padding: 9px 0 7px 0;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+}
+.logo {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.11rem;
+  padding: 0 15px;
+  color: #960131;
+  text-align: left;
+  line-height: 1.15;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  margin: 0 22px;
+  flex: 1;
+}
+.search-form input {
+  border-radius: 18px;
+  border: 1.5px solid #aaaaaa;
+  padding: 8px 16px;
+  width: 245px;
+  font-size: 1.13rem;
+  font-style: italic;
+}
+.search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-left: 7px;
+  font-size: 1.25rem;
+}
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+.nav-links a {
+  font-family: 'Georgia', serif;
+  text-decoration: none;
+  color: #a23bcf;
+  font-size: 1.14rem;
+  padding: 7px 18px;
+  border-radius: 10px;
+  transition: background 0.13s;
+}
+.nav-links a.active-btn {
+  background: #a23bcf;
+  color: #fff;
+  font-weight: 600;
+}
+.nav-links a:hover {
+  background: #d9abfa;
+}
+
+/* Artists page */
+.artists-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  margin: 38px 0 0 0;
+}
+
+.artists-card {
+  background: #fff;
+  border-radius: 29px;
+  box-shadow: 0 7px 24px 2px rgba(48,10,95,.10);
+  width: 48%;
+  max-width: 600px;
+  min-width: 290px;
+  display: flex;
+  align-items: flex-start;
+  padding: 25px 18px;
+  gap: 22px;
+}
+.artist-img {
+  max-width: 43%;
+  width: 180px;
+  height: auto;
+  border-radius: 2.2vw;
+  box-shadow: 0 1px 8px rgba(70,0,41,.13);
+  background: #fff;
+}
+.artist-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.artist-info .artist-name {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #18192b;
+  display: block;
+}
+.artist-info span {
+  font-size: 1.14rem;
+  color: #231c1c;
+  line-height: 1.6;
+}
+.artist-info a {
+  color: #a23bcf;
+  text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  .artists-card {
+    width: 90vw;
+    max-width:97vw;
+  }
+  .artists-container { flex-direction: column; gap:20px;}
+}
+
+@media (max-width: 600px) {
+  .artists-card {
+    flex-direction: column;
+    align-items: center;
+    width: 98vw;
+    min-width: 0;
+    padding: 12px 5px;
+  }
+  .artist-img {
+    width: 75vw;
+    max-width: 270px;
+  }
+}
