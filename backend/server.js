@@ -1,5 +1,11 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://2007samhitha_db_user:SAMHI2007tha%40@vgdb.vzmfmoa.mongodb.net/?appName=vgdb";
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb+srv://2007samhitha_db_user:<db_password>@vgdb.vzmfmoa.mongodb.net/?appName=vgdb')
+  .then(() => console.log('MongoDB connected'))
+  .catch((err) => console.error('Error:', err));
+
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
